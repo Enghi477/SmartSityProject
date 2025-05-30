@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка доступа</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #212529;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-gray);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .error-container {
+            height: 100%;
+        }
+
+        .error-image {
+            background: url('/images/error.jpg') center/cover no-repeat;
+            height: 100%;
+            transform: translateX(-100%);
+            animation: slideIn 0.8s forwards 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .error-content {
+            padding: 2rem;
+            opacity: 0;
+            animation: fadeIn 0.8s forwards 0.8s ease-out;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #dc3545;
+            margin-bottom: 1.5rem;
+        }
+
+        .error-text {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .btn-custom {
+            --btn-height: 34px;
+            height: var(--btn-height);
+            min-width: 110px;
+            padding: 0 26px;
+            border-radius: calc(var(--btn-height)/2);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            border: 1px solid var(--black);
+        }
+
+        .btn-white {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        .btn-white:hover {
+            background-color: #e9ecef;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .btn-black {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        .btn-black:hover {
+            background-color: #343a40;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .error-image {
+                height: 40vh;
+                transform: translateY(-100%);
+                animation: slideInMobile 0.8s forwards 0.3s ease-out;
+            }
+
+            .error-content {
+                height: 60vh;
+                padding: 1.5rem;
+            }
+
+            .btn-custom {
+                --btn-height: 32px;
+                min-width: 100px;
+                padding: 0 22px;
+            }
+
+            @keyframes slideInMobile {
+                from { transform: translateY(-100%); }
+                to { transform: translateY(0); }
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid error-container p-0">
+    <div class="row g-0 h-100">
+        <div class="col-lg-6 error-image"></div>
+
+        <div class="col-lg-6 d-flex align-items-center justify-content-center error-content">
+            <div class="text-center text-lg-start">
+                <h1 class="error-title">Доступ запрещен</h1>
+                <p class="error-text">
+                    У вас нет прав для просмотра этой страницы.<br>
+                    Пожалуйста, авторизуйтесь или вернитесь на главную.
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                    <a href="/main" class="btn btn-custom btn-white">
+                        <i class="bi bi-house-door me-2"></i>Главная
+                    </a>
+                    <a href="/auth/login" class="btn btn-custom btn-black">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Войти
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

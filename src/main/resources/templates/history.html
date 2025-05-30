@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>История Тольятти</title>
+    <link rel="stylesheet" href="/css/history.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a th:href="@{/main}" class="navbar-brand">
+            <img class="logo-img me-2" th:src="@{/images/logo1.jpg}" alt="Логотип">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" th:href="@{/main}">На главную</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/info}">О городе</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/statistic}">Тольятти в цифрах</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" th:href="@{/history}">История</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-secondary ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#userMenu">
+                <i class="bi bi-person-fill"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="userMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Меню пользователя</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item" sec:authorize="isAuthenticated()">
+                <a class="nav-link" th:href="@{/account}">Личный кабинет</a>
+            </li>
+            <li sec:authorize="hasAuthority('ROLE_ADMIN')" class="nav-item">
+                <a class="nav-link" th:href="@{/admin/dashboard}">
+                    <i class="bi bi-speedometer2 me-2"></i> Панель администратора
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" th:href="@{/auth/logout}">
+                    <i class="bi bi-box-arrow-right me-2"></i> Выход
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="history-container">
+    <div class="history-header">
+        <h1 class="history-title">История Тольятти</h1>
+        <p class="history-subtitle">От крепости Ставрополь до автомобильной столицы России</p>
+    </div>
+
+    <div class="timeline">
+        <!-- 1737 год -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">1737 год</div>
+                <img class="timeline-image" th:src="@{/images/stavr.jpg}" alt="Основание Ставрополя">
+                <p class="timeline-text">
+                    Свой путь Тольятти начал как город-крепость, основанный государственным деятелем и российским историком Василием Татищевым. 20 июня 1737 года императрица Анна Иоанновна жаловала грамоту крещенной калмыцкой княгине Анне Тайшиной об основании города. Форт-пост решено было назвать Ставрополь, что в переводе с греческого языка означает «Святой крест».
+                </p>
+                <p class="timeline-text">
+                    В честь этой даты в Тольятти сложилась ежегодная традиция чествовать семьи, в которых дети появились на свет 20 июня — в День исторического рождения города.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">XIX век</div>
+                <p class="timeline-text">
+                    В конце XIX века город стал развиваться как рекреационный центр благодаря расположенным неподалёку живописным Жигулёвским горам и раскинувшимся вдоль Волги сосновым лесам. Люди, путешествующие по реке на теплоходах, любили останавливаться в местных санаториях.
+                </p>
+                <p class="timeline-text">
+                    В начале XX века в Ставрополе проживало около 6 тысяч человек. Работала одна земская больница, 6 учебных заведений, 2 гостиницы, 6 фабрик и заводов, 1 водяная и 4 ветряных мельницы. К середине столетия в городе насчитывалось 12 тысяч жителей.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">1950 год</div>
+                <img class="timeline-image" th:src="@{/images/hps.jpeg}" alt="Строительство ГЭС">
+                <p class="timeline-text">
+                    Ставрополь становится центром величайшей стройки - Волжской ГЭС им. В.И. Ленина и переживает поистине второе рождение. В 1953-1955 годах город практически полностью переносится на 18 км из зоны затопления Куйбышевского водохранилища на левый берег реки Волги.
+                </p>
+                <p class="timeline-text">
+                    На месте города должно было появиться огромное водохранилище, поэтому Ставрополь перенесли из зоны затопления на более высокий берег: удалось разобрать и переместить около 2500 строений. Старинное калмыцкое поселение ушло под воды Куйбышевского водохранилища.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">1964 год</div>
+                <p class="timeline-text">
+                    Вновь отстроенный город получил новое название — Тольятти, в честь итальянского коммуниста Пальмиро Тольятти. Это решение было принято советским руководством в знак уважения к итальянскому коммунистическому движению.
+                </p>
+                <p class="timeline-text">
+                    Переименование совпало с началом нового этапа в развитии города, который вскоре стал известен как автомобильная столица России.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">1966 год</div>
+                <img class="timeline-image" th:src="@{/images/vaz.jpg}" alt="Строительство АвтоВАЗа">
+                <p class="timeline-text">
+                    Вскоре новое название города прогремело на всю страну: в Тольятти появился легендарный Волжский автомобильный завод. Формально АвтоВАЗ родился в 1966‑м, когда официально началось строительство предприятия, а производство началось в 1970‑е годы.
+                </p>
+                <p class="timeline-text">
+                    В наши дни завод остаётся важнейшей точкой притяжения. Он располагается на Южном шоссе и занимает огромную территорию: только длина главного конвейера больше полутора километров.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-year">Наши дни</div>
+                <img class="timeline-image" th:src="@{/images/today_tlt.jpg}" alt="Современный Тольятти">
+                <p class="timeline-text">
+                    Современный Тольятти — развивающийся город с интересными туристическими локациями на любой вкус. Это не только промышленный центр, но и город с богатой культурной жизнью, образовательными учреждениями и красивой природой.
+                </p>
+                <p class="timeline-text">
+                    Жигулёвские горы, Волжские просторы и современные кварталы создают неповторимый облик города, который продолжает развиваться, сохраняя свою уникальную историю.
+                </p>
+                <a href="https://museum.samgd.ru/mo/tolytt/history/79264/" class="source-link" target="_blank">
+                    Подробнее на сайте "Музей истории Самарского края"
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2025 Умный город. Все права защищены.</p>
+        <div class="social-links mt-3">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+

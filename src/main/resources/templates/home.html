@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Умный город</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+<div class="fullscreen-bg">
+
+    <img th:src="@{/images/i.webp}" alt="Фоновое изображение Умного города">
+
+    <div class="content-overlay">
+        <h1>Добро пожаловать в приложение "Умный город"</h1>
+        <p>Инновационная платформа для управления городской инфраструктурой</p>
+
+        <div sec:authorize="!isAuthenticated()">
+            <a th:href="@{/auth/login}" class="btn">Вход</a>
+            <a th:href="@{/auth/register}" class="btn">Регистрация</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

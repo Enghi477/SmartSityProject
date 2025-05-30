@@ -1,0 +1,161 @@
+
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4cc9f0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #4bb543;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+}
+
+.logo-img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.stats-header {
+    background: linear-gradient(400deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+}
+
+.stats-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stats-subtitle {
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 1.2rem;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    border: none;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.stat-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.section-title {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin: 2rem 0 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+}
+
+.district-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.district-header {
+    padding: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.district-body {
+    padding: 1.5rem;
+    background: white;
+}
+
+.district-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@media (max-width: 768px) {
+    .stats-title {
+        font-size: 2rem;
+    }
+    .stat-value {
+        font-size: 1.8rem;
+    }
+}

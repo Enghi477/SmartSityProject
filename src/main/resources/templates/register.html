@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .error-message {
+      color: #dc3545;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    input:invalid {
+      border-color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+<div class="auth-container">
+  <h2>Регистрация</h2>
+  <form th:action="@{/auth/register}" th:object="${registrationRequest}" method="post" id="registerForm">
+    <div class="form-group">
+      <label for="firstname">Имя:</label>
+      <input type="text" id="firstname" th:field="*{firstname}"
+             pattern="[A-Za-zА-Яа-яЁё\s]+"
+             title="Разрешены только буквы"
+             required>
+      <span th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}" class="error-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Фамилия:</label>
+      <input type="text" id="lastname" th:field="*{lastname}"
+             pattern="[A-Za-zА-Яа-яЁё\s]+"
+             title="Разрешены только буквы"
+             required>
+      <span th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}" class="error-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" th:field="*{email}" required>
+      <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" th:field="*{password}" required>
+      <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="error-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" th:field="*{phone}"
+             pattern="^\+?[1-9][0-9]{7,14}$"
+             title="Телефонный номер должен состоять из 8-15 цифр и начинаться с +"
+             required>
+      <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}" class="error-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="age">Возраст:</label>
+      <input type="number" id="age" th:field="*{age}"
+             min="18" max="100"
+             oninput="validateAge(this)"
+             required>
+      <span th:if="${#fields.hasErrors('age')}"
+            th:errors="*{age}"
+            class="error-message"></span>
+      <span id="ageError" class="error-message" style="display: none;">
+        Возраст должен быть от 18 до 100 лет
+      </span>
+    </div>
+    <div th:if="${error}" class="error-message" th:text="${error}"></div>
+    <button type="submit" class="btn">Регистрация</button>
+  </form>
+  <p>У вас уже есть учетная запись? <a th:href="@{/auth/login}">Вход</a></p>
+</div>
+<script th:src="@{/js/register.js}"></script>
+</body>
+</html>
+

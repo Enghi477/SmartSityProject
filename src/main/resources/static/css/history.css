@@ -1,0 +1,223 @@
+
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4cc9f0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #4bb543;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+}
+.logo-img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.history-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.history-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.history-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.history-title:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    bottom: -10px;
+    left: 10%;
+}
+
+.history-subtitle {
+    font-size: 1.3rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1500px; /* Увеличил максимальную ширину таймлайна */
+    margin: 0 auto;
+}
+.timeline:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--accent-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    width: 90%; /* Увеличил ширину контентных блоков */
+    margin: 0 auto; /* Центрирование */
+}
+.timeline-year {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-weight: 600;
+    top: 20px;
+}
+
+.timeline-item:nth-child(odd) .timeline-year {
+    right: -120px;
+}
+
+.timeline-item:nth-child(even) .timeline-year {
+    left: -120px;
+}
+
+.timeline-item:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    top: 40px;
+}
+
+.timeline-item:nth-child(odd):after {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even):after {
+    left: -10px;
+}
+
+.timeline-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-image:hover {
+    transform: scale(1.03);
+}
+
+.timeline-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.source-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-year,
+    .timeline-item:nth-child(even) .timeline-year {
+        left: 0;
+        right: auto;
+        top: -20px;
+    }
+
+    .timeline-item:after {
+        left: 21px;
+    }
+
+    .timeline-item:nth-child(odd):after,
+    .timeline-item:nth-child(even):after {
+        left: 21px;
+    }
+}

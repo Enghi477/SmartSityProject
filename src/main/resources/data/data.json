@@ -1,0 +1,517 @@
+
+{ "categories": {
+  "city": ["Парки", "Музеи", "Набережные", "Архитектура", "Пляжи"],
+  "surrounding": ["Горы", "Сооружения", "Другие интересные места"]
+},
+
+  "landmarks": [
+    {
+      "name": "Преданность",
+      "description": "Архитектура",
+      "latitude": 53.54622,
+      "longitude": 49.362127,
+      "category": "Архитектура",
+      "imageUrl": "https://avatars.mds.yandex.net/get-altay/6528051/2a0000018f7dce40eef87a738e9b400c4ed7/XXXL"
+    },
+    {
+      "name": "Татищев",
+      "description": "Архитектура",
+      "latitude": 53.475641,
+      "longitude": 49.348957,
+      "category": "Архитектура",
+      "imageUrl": "https://avatars.mds.yandex.net/get-altay/1778671/2a0000016ca245b9db59f81bf51e5302efe7/XXXL"
+    },
+
+    {
+      "name": "Скорбящий ангел",
+      "description": "Архитектура",
+      "latitude": 53.509852,
+      "longitude": 49.421288,
+      "category": "Архитектура",
+      "imageUrl": "https://1737.tltsu.ru/wp-content/uploads/2020/11/IMG_3031.jpg"
+    },
+
+    {
+      "name": "Обелиск славы",
+      "description": "Архитектура",
+      "latitude": 53.513616,
+      "longitude":  49.409306,
+      "category": "Архитектура",
+      "imageUrl": "https://ic.pics.livejournal.com/chronograph/16022037/1332645/1332645_original.jpg"
+    },
+    {
+      "name": "Памятник Ленину",
+      "description": "Архитектура",
+      "latitude": 53.509307,
+      "longitude":  49.419204,
+      "category": "Архитектура",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Lenin_monument_in_central_park_Togliatti.jpg"
+    },
+    {
+      "name": "Памятник Карлу Марксу",
+      "description": "Архитектура",
+      "latitude": 53.514492,
+      "longitude":  49.409793,
+      "category": "Архитектура",
+      "imageUrl": "https://i.pinimg.com/736x/e8/24/c3/e824c31a73c61f442cbf1df365e8f61e.jpg"
+    },
+    {
+      "name": "Мемориал в честь 40-летия Победы в Великой Отечественной войне",
+      "description": "Архитектура",
+      "latitude": 53.510961,
+      "longitude":  49.275106,
+      "category": "Архитектура",
+      "imageUrl": "https://avatars.mds.yandex.net/get-altay/9707320/2a0000018b6ecd1727e9162815ea16090c4c/XXL_height"
+    },
+    {
+      "name": "Памятник-горельеф Ульяне Громовой",
+      "description": "Архитектура",
+      "latitude": 53.489238,
+      "longitude":  49.471825,
+      "category": "Архитектура",
+      "imageUrl": "https://i.pinimg.com/736x/41/a8/2e/41a82e5f8ce6f31d63c49543135db725.jpg"
+    },
+    {
+      "name": "Центральный парк",
+      "description": "Парки",
+      "latitude": 53.510213,
+      "longitude": 49.419289,
+      "category": "Парки",
+      "imageUrl": "https://augustnews.ru/wp-content/uploads/2020/07/tsentralnyi-park-alleya-klumba.jpg"
+    },
+    {
+      "name": "Дендропарк",
+      "description": "Парки",
+      "latitude": 53.553310,
+      "longitude": 49.372951,
+      "category": "Парки",
+      "imageUrl": "https://gorodok-tlt.ru/upload/iblock/c0c/2.jpg"
+    },
+    {
+      "name": "Фанни парк",
+      "description": "Парки",
+      "latitude": 53.523224,
+      "longitude": 49.270978,
+      "category": "Парки",
+      "imageUrl": "https://img-fotki.yandex.ru/get/9062/46980979.1c8/0_10604c_9ea34e52_orig"
+    },
+    {
+      "name": "Парк Победы",
+      "description": "Парки",
+      "latitude": 53.512092,
+      "longitude": 49.274638,
+      "category": "Парки",
+      "imageUrl": "https://sun9-16.userapi.com/impg/kaPYEAzPabX03YmbaCJQ0dq5cwuqtHpkxqtKtQ/uk_pmDM385Y.jpg?size=1280x935&quality=95&sign=c39186bab13d5ba6793d22e9ed6f1d65&c_uniq_tag=Xgc1K8psJiAe4VTfpefiAV2MhsB-d1MpYfineyMmKTI&type=album"
+    },
+    {
+      "name": "МАУК Парковый комплекс истории техники имени К. Г. Сахарова",
+      "description": "Музеи и галереи",
+      "latitude": 53.553931,
+      "longitude": 49.249837,
+      "category": "Музеи",
+      "imageUrl": "https://a.d-cd.net/c56ccecs-960.jpg"
+    },
+    {
+      "name": "Музей АвтоВАЗ",
+      "description": "Музеи и галереи",
+      "latitude": 53.553043,
+      "longitude": 49.271359,
+      "category": "Музеи",
+      "imageUrl": "https://travelq.ru/wp-content/uploads/2023/07/emblema-vaz.jpg"
+    },
+    {
+      "name": "Тольяттинский краеведческий музей",
+      "description": "Музеи и галереи",
+      "latitude": 53.502056,
+      "longitude": 49.420777,
+      "category": "Музеи",
+      "imageUrl": "https://navigator-tlt.ru/wp-content/uploads/2019/10/7fff74282c8cdbb70e66b6fc74f9ad94.jpg"
+    },
+    {
+      "name": "Наследие. Дом Стариковых",
+      "description": "Музеи и галереи",
+      "latitude": 53.511932,
+      "longitude": 49.402706,
+      "category": "Музеи",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65add893864efb0ec9f217fb_65add94daba0f104e7107a03/scale_1200"
+    },
+    {
+      "name": "Музей Актуального реализма",
+      "description": "Музеи и галереи",
+      "latitude": 53.524114,
+      "longitude": 49.282328,
+      "category": "Музеи",
+      "imageUrl": "https://avatars.mds.yandex.net/get-altay/2809325/2a00000171c9c5ae19201695c2043517d3de/orig"
+    },
+    {
+      "name": "Художественный музей",
+      "description": "Музеи и галереи",
+      "latitude": 53.525073,
+      "longitude": 49.318134,
+      "category": "Музеи",
+      "imageUrl": "https://i.pinimg.com/736x/57/24/44/57244446aff834f1c51ebdf6390966a0.jpg"
+    },
+    {
+      "name": "Набережная Комсомольского района",
+      "description": "Набережные",
+      "latitude": 53.474479,
+      "longitude": 49.455908,
+      "category": "Набережные",
+      "imageUrl": "https://sun6-20.userapi.com/impg/2QDz2JjJ_33bHH0Izhp5Y-Xwfq0xn_tAOcvfZA/FaXoJJp7QJA.jpg?size=807x538&quality=96&sign=86e79234a492296e7f7e247d7900fb2e&c_uniq_tag=R3BQVns8hOtV7G0rvBD1u44il4Fme2HG3HWpTYfFwuA&type=album"
+    },
+    {
+      "name": "Набережная 6-го квартала",
+      "description": "Набережные",
+      "latitude": 53.502789,
+      "longitude": 49.25359,
+      "category": "Набережные",
+      "imageUrl": "https://www.business-vector.info/upload/iblock/8f9/314hyqvyg2wi7zkmq8g5q2dj3t8fz2lc.jpg"
+    },
+    {
+      "name": "Набережная 8-го квартала",
+      "description": "Набережные",
+      "latitude": 53.497397,
+      "longitude": 49.263297,
+      "category": "Набережные",
+      "imageUrl": "https://tvtogliatti24.ru/userfiles/news/big/dsc_2313_1684758086.jpg"
+    },
+    {
+      "name": "Итальянский пляж",
+      "description": "Пляжи",
+      "latitude": 53.485101,
+      "longitude": 49.336749,
+      "category": "Пляжи",
+      "imageUrl": "https://avatars.mds.yandex.net/i?id=2032c510d8ce524e95e1a12403dd31fc4597b148-10954464-images-thumbs&n=13"
+    },
+    {
+      "name": "Западный пляж",
+      "description": "Пляжи",
+      "latitude": 53.510544,
+      "longitude": 49.255049,
+      "category": "Пляжи",
+      "imageUrl": "https://sun9-west.userapi.com/sun9-50/s/v1/ig1/xH7amfqKXVpw9OPihkFLWQlLadRwR3WMDjhImU9VrWTaoFaeEQeLAO20zFSJhUn2DIZhOaoq.jpg?size=604x338&quality=96&type=album"
+    },
+    {
+      "name": "Восточный пляж",
+      "description": "Пляжи",
+      "latitude": 53.499996,
+      "longitude": 49.288353,
+      "category": "Пляжи",
+      "imageUrl": "https://i.ytimg.com/vi/YDBOdD0Sodc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFUgXihlMA8=&rs=AOn4CLAJAfg3k73_WMQHbqukBUCPivMkEA"
+    },
+    {
+      "name": "Дикий пляж",
+      "description": "Пляжи",
+      "latitude": 53.473993,
+      "longitude": 49.424478,
+      "category": "Пляжи",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_664b309816ed13553a3c5664_664b3fe19ff03944e1c4be73/scale_1200"
+    },
+    {
+      "name": "Гора Стрельная",
+      "description": "Горы",
+      "latitude": 53.438865,
+      "longitude": 49.757307,
+      "category": "Горы",
+      "imageUrl": "https://sun9-8.userapi.com/impg/fVWDuUtG13xPFwjEo6CYxBKp9sfdUY8cAqNcQA/Zzg9K3VrW1Q.jpg?size=807x605&quality=95&sign=35bbdf2ee18b15bb540423c5cfb98d91&c_uniq_tag=xvkyHszzZG2UR--SWWE3BExgb2fUIolhze3GLQM8sp0&type=album"
+    },
+    {
+      "name": "Молодецкий курган",
+      "description": "Горы",
+      "latitude": 53.406471,
+      "longitude": 49.310924,
+      "category": "Горы",
+      "imageUrl": "https://investinsamara.ru/upload/medialibrary/3df/rib6q81xkx8xxfaryjv8khs10crxpsoy.jpg"
+    },
+    {
+      "name": "Гора Верблюд",
+      "description": "Горы",
+      "latitude": 53.408990,
+      "longitude": 50.072722,
+      "category": "Горы",
+      "imageUrl": "https://rus.team/images/article/43372/2018-12-08-329_74632-6_985480.webp"
+    },
+    {
+      "name": "Сокольи горы",
+      "description": "Горы",
+      "latitude": 53.401897,
+      "longitude": 50.167747,
+      "category": "Горы",
+      "imageUrl": "https://admkrgl.ru/c/galb/162.jpg"
+    },
+    {
+      "name": "Гора Тип-Тяв",
+      "description": "Горы",
+      "latitude": 53.402037,
+      "longitude": 50.161521,
+      "category": "Горы",
+      "imageUrl": "http://img.tourister.ru/files/2/7/6/3/8/7/1/8/original.jpg"
+    },
+    {
+      "name": "Царев курган",
+      "description": "Горы",
+      "latitude": 53.423468,
+      "longitude": 50.122409,
+      "category": "Горы",
+      "imageUrl": "https://extraguide.ru/images/blog/2021/02-03-grl0e3-tsarev-kurgan.jpg"
+    },
+    {
+      "name": "Гора Отважная",
+      "description": "Горы",
+      "latitude": 53.424254,
+      "longitude": 49.438817,
+      "category": "Горы",
+      "imageUrl": "https://cs12.pikabu.ru/post_img/2019/05/05/6/og_og_1557047923274755234.jpg"
+    },
+    {
+      "name": "Гора барсук",
+      "description": "Горы",
+      "latitude": 53.323889,
+      "longitude": 50.196837,
+      "category": "Горы",
+      "imageUrl": "https://pp.userapi.com/Q-A_lp_CRi0zUyHqDOb500ejGbauZWJG8SD29A/519Z4DwQlpU.jpg"
+    },
+    {
+      "name": "Могутовая гора",
+      "description": "Горы",
+      "latitude": 53.423854,
+      "longitude": 49.506699,
+      "category": "Горы",
+      "imageUrl": "https://img-fotki.yandex.ru/get/60676/46980979.204/0_10ef07_aad4f1f1_orig"
+    },
+    {
+      "name": "Лысая гора",
+      "description": "Горы",
+      "latitude": 53.432718,
+      "longitude": 49.549235,
+      "category": "Горы",
+      "imageUrl": "https://sun9-25.userapi.com/impf/c853528/v853528565/97e9b/N28m1oxiDJc.jpg?size=604x453&quality=96&sign=992dc4078f10170117be0db219daa9bd&type=album"
+    },
+    {
+      "name": "Гора Светёлка",
+      "description": "Горы",
+      "latitude": 53.372769,
+      "longitude": 49.097015,
+      "category": "Горы",
+      "imageUrl": "https://goru.travel/storage/app/uploads/public/5ac/338/392/5ac3383924c7a641324067.jpg"
+    },
+    {
+      "name": "Замок Гарибальди",
+      "description": "Сооружения",
+      "latitude": 53.821872,
+      "longitude": 49.085597,
+      "category": "Сооружения",
+      "imageUrl": "https://cdn.culture.ru/images/5dce9517-46f7-5dce-82ee-9171c24d014f"
+    },
+    {
+      "name": "Дом купца А. Чукина",
+      "description": "Сооружения",
+      "latitude": 53.283370,
+      "longitude": 49.606526,
+      "category": "Сооружения",
+      "imageUrl": "https://ic.pics.livejournal.com/dima_pashchenko/64328672/723921/723921_original.jpg"
+    },
+    {
+      "name": "Усадьба графов Григория и Владимира Орловых-Давыдовых",
+      "description": "Сооружения",
+      "latitude": 53.392860,
+      "longitude": 49.075227,
+      "category": "Сооружения",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Усолье_Усадьба.jpg/1200px-Усолье_Усадьба.jpg"
+    },
+
+    {
+      "name": "Церковь Михаила Архангела",
+      "description": "Сооружения",
+      "latitude": 52.898363,
+      "longitude": 50.036207,
+      "category": "Сооружения",
+      "imageUrl": "https://avatars.mds.yandex.net/get-altay/2051686/2a0000016ff18c0fcd65f816864c9069d8a2/L_height"
+    },
+    {
+      "name": "Церковь Казанской Иконы Божией Матери",
+      "description": "Сооружения",
+      "latitude": 54.317295,
+      "longitude": 52.362469,
+      "category": "Сооружения",
+      "imageUrl": "https://sobory.ru/pic/43400/43408_20201119_210749.webp"
+    },
+    {
+      "name": "Троицкая церковь",
+      "description": "Сооружения",
+      "latitude": 54.397789,
+      "longitude": 52.274871,
+      "category": "Сооружения",
+      "imageUrl": "https://avatars.mds.yandex.net/i?id=f95dfd39d24d75ce1b1bb5b639b264b0_l-5224299-images-thumbs&n=13"
+    },
+    {
+      "name": "Мельница купца Маркова",
+      "description": "Сооружения",
+      "latitude": 54.289984,
+      "longitude": 51.124289,
+      "category": "Сооружения",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65ed5adf0fe2f30fb1fd15e1_65f1cb249dab3424f3a44079/scale_1200"
+    },
+    {
+      "name": "Усадьба князей гагариных",
+      "description": "Сооружения",
+      "latitude": 53.230821,
+      "longitude": 48.233658,
+      "category": "Сооружения",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65e4e78450ad416ac162c72c_65e4f92bba2c6c0740c9d853/scale_1200"
+    },
+    {
+      "name": "Яхт-клуб Дружба",
+      "description": "Другие интересные места",
+      "latitude": 53.468634,
+      "longitude": 49.365724,
+      "category": "Другие интересные места",
+      "imageUrl": "https://s13.stc.yc.kpcdn.net/share/i/12/11186029/wr-960.webp"
+    },
+    {
+      "name": "Духовно-культурный кремль «Богатырская Слобода»",
+      "description": "Другие интересные места",
+      "latitude": 53.336032,
+      "longitude": 49.246363,
+      "category": "Другие интересные места",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67a60ae587cbe525dacdb482_67a60b3e0ef3f52ad6e56905/scale_1200"
+    },
+    {
+      "name": "Голубое озеро",
+      "description": "Другие интересные места",
+      "latitude": 53.912437,
+      "longitude": 51.487645,
+      "category": "Другие интересные места",
+      "imageUrl": "https://img.tourister.ru/files/3/2/9/2/2/9/2/1/clones/728_546_fixedwidth_retina.jpg?t=1748295302634"
+    },
+    {
+      "name": "Рачейский бор",
+      "description": "Другие интересные места",
+      "latitude": 53.393038,
+      "longitude": 48.179424,
+      "category": "Другие интересные места",
+      "imageUrl": "https://putevodzvezda.ru/wp-content/uploads/2023/05/p300423-1.jpg"
+    },
+    {
+      "name": "Сокские штольни",
+      "description": "Другие интересные места",
+      "latitude": 53.414776,
+      "longitude": 50.149188,
+      "category": "Другие интересные места",
+      "imageUrl": "https://ic.pics.livejournal.com/3ojlotou/24945987/3827082/3827082_original.jpg"
+    },
+    {
+      "name": "Токмаклинский водопад",
+      "description": "Другие интересные места",
+      "latitude": 54.336560,
+      "longitude": 51.123624,
+      "category": "Другие интересные места",
+      "imageUrl": "https://komunavolge.ru/assets/uploads/gide/2023/June/20glavnyhdostoprimechatelnostey/4576.jpg"
+    },
+    {
+      "name": "Маяк в яхт-клубе «Дружба»",
+      "description": "Другие интересные места",
+      "latitude": 53.467717,
+      "longitude": 49.363814,
+      "category": "Другие интересные места",
+      "imageUrl": "https://avatars.mds.yandex.net/get-altay/11411122/2a0000018e66e074264f25f551d593c69f30/XXL_height"
+    },
+    {
+      "name": "Свято-Богородичный Казанский мужской монастырь",
+      "description": "Другие интересные места",
+      "latitude": 53.187693,
+      "longitude": 49.688200,
+      "category": "Другие интересные места",
+      "imageUrl": "https://avatars.mds.yandex.net/i?id=0aef1fb1d5b55c977577b62f41621bfa_l-5590006-images-thumbs&n=13"
+    },
+    {
+      "name": "Подвальские террасы",
+      "description": "Другие интересные места",
+      "latitude": 53.693037,
+      "longitude": 48.854784,
+      "category": "Другие интересные места",
+      "imageUrl": "https://static.tildacdn.com/tild3234-6366-4135-a136-643264316234/229961251_3388761912.jpg"
+    },
+    {
+      "name": "Падовский карьер",
+      "description": "Другие интересные места",
+      "latitude": 52.460934,
+      "longitude": 49.599164,
+      "category": "Другие интересные места",
+      "imageUrl": "https://komunavolge.ru/assets/uploads/gide/2023/June/20glavnyhdostoprimechatelnostey/ERS_7462.jpg"
+    },
+    {
+      "name": "Качели в районе Прибрежного",
+      "description": "Другие интересные места",
+      "latitude": 53.475912,
+      "longitude": 49.886815,
+      "category": "Другие интересные места",
+      "imageUrl": "https://komunavolge.ru/assets/uploads/gide/2023/June/20glavnyhdostoprimechatelnostey/ERS_7802.jpg"
+    },
+
+    {
+      "name": "Вертолётка",
+      "description": "Другие интересные места",
+      "latitude": 53.344285,
+      "longitude": 50.197718,
+      "category": "Другие интересные места",
+      "imageUrl": "https://a.d-cd.net/0ehXF6ycmoZnu-yqPwX6r59OokI-1920.jpg"
+    },
+    {
+      "name": "Водопад «Девичьи слёзы»",
+      "description": "Другие интересные места",
+      "latitude": 53.395996,
+      "longitude": 48.259898,
+      "category": "Другие интересные места",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/3855260/pub_6058b19184fb175a809ef30b_6058b4b0ad1e4d2a86bf5c68/scale_1200"
+    },
+    {
+      "name": "Красноглинский холодильник",
+      "description": "Другие интересные места",
+      "latitude": 53.409325,
+      "longitude": 50.144162,
+      "category": "Другие интересные места",
+      "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/3808423/pub_60aeaa6d79cf6e2e9553a18a_60aeaeb78399513a4c0ab3eb/scale_1200"
+    },
+    {
+      "name": "Деревянная мельница",
+      "description": "Другие интересные места",
+      "latitude": 52.915548,
+      "longitude": 50.820091,
+      "category": "Другие интересные места",
+      "imageUrl": "https://podreiko.ru/wp-content/uploads/2020/08/Деревянная-мельница-с.-Бариновка-1.jpg"
+    },
+    {
+      "name": "Кутулукские яры",
+      "description": "Другие интересные места",
+      "latitude": 53.183582,
+      "longitude": 51.371354,
+      "category": "Другие интересные места",
+      "imageUrl": "https://tripplanet.ru/wp-content/uploads/europe/russia/samara-region/kutuluk-yars.jpg"
+    },
+    {
+      "name": "Серное озеро",
+      "description": "Другие интересные места",
+      "latitude": 53.918034,
+      "longitude": 51.252471,
+      "category": "Другие интересные места",
+      "imageUrl": "https://tripplanet.ru/wp-content/uploads/europe/russia/samara-region/sulfur-lake.jpg"
+    },
+    {
+      "name": "Урочище «Каменная чаша»",
+      "description": "Другие интересные места",
+      "latitude": 53.40695,
+      "longitude": 49.916773,
+      "category": "Другие интересные места",
+      "imageUrl": "https://tripplanet.ru/wp-content/uploads/europe/russia/samara-region/tract-stone-bowl.jpg"
+    },
+    {
+      "name": "Розовое озеро»",
+      "description": "Другие интересные места",
+      "latitude": 53.280615,
+      "longitude": 50.482721,
+      "category": "Другие интересные места",
+      "imageUrl": "https://sun9-2.userapi.com/impg/rQtZQtNTdeZLaKM7PXwQPffyyTuOaRYlJByjfw/yPYInrcrxTw.jpg?size=604x453&quality=96&sign=6542c52a1e299d35371372f63fd912b9&c_uniq_tag=naRfk4HSjUMk5BfjDrcm9fl5uJ4he0GDqb_u79zcAmI&type=album"
+    }
+  ]
+}
