@@ -82,7 +82,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             Cookie invalidJwtCookie = new Cookie("jwt", null);
             invalidJwtCookie.setHttpOnly(true);
             invalidJwtCookie.setPath("/");
-            invalidJwtCookie.setMaxAge(0); // Удаляем куки
+            invalidJwtCookie.setMaxAge(0); 
             response.addCookie(invalidJwtCookie);
 
         }
