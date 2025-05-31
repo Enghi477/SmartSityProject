@@ -11,7 +11,6 @@
     updateTime();
     setInterval(updateTime, 1000);
 
-    // Погода
     document.addEventListener('DOMContentLoaded', function() {
     const cityId = 482283; // Тольятти
     const apiKey = '68c388d372ff55617bde8763d111c784';
